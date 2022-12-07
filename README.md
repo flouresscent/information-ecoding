@@ -20,7 +20,7 @@ The Shannon-Fano encoding algorithm is implemented, as well as the decoding of t
   [INFO] A file with a decoded message has been created
 
   [INFO] Matches of the original message and decoded 100%
-  [INFO] The entropy of the message is 9
+  [INFO] The entropy of the message is 2.0404
   [INFO] The average number of bits per character in an encoded message is 2.9091
   [INFO] The difference in the amount of memory of the original message and the encoded one was 56 bits
 ```
