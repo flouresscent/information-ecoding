@@ -230,6 +230,6 @@ decode_file_size = 32 + sum(extra_state ~= 0) * 32;
 % disp("[INFO] Закодированное сообщение " + string(enc_mes_str))
 % disp("[INFO] Декодированное сообщение " + string(message_str))
 disp("[INFO] Cовпадения исходного сообщения и декодированного " + string(match_quant/length(text) * 100) + "%");
-disp("[INFO] Энтропия сообщения " + string(H)); 
+disp("[INFO] Энтропия сообщения " + string(entr)); 
 disp("[INFO] Среднее кол-во бит на символ в закодированном сообщении " + string(decode_file_size / double(M)));
 disp("[INFO] Разница в объемах памяти оргинального сообщения и закодированного составила " + string(text_file_size - decode_file_size) + " бит");
