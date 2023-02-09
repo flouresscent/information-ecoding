@@ -47,10 +47,10 @@ for i = 1:length(uniq_symb)
     % Строим таблицу
     % fprintf('\n %c \t %d \t %d \n', uniq_symb(i), uniq_symb_len, freq);
     % Присваиваем эту таблицу
-    matrix(i,:)={uniq_symb(i), uniq_symb_len, freq};
+    matrix(i,:) = {uniq_symb(i), uniq_symb_len, freq};
 end
  
-for j=1:length(uniq_symb)
+for j = 1:length(uniq_symb)
     % Присваиваем столбец частот
     P(j) = matrix{j, 3};
 end
@@ -113,7 +113,7 @@ A(:, length(uniq_symb)) = B;
 for l = 1:length(uniq_symb) - 1
     for m = length(uniq_symb) - 1:-1:l
         % Заменяем ненужные нули девятками
-        A(l, m)=9;
+        A(l, m) = 9;
     end
 end
  
