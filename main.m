@@ -38,7 +38,7 @@ extra_state = zeros(1, length(text), "uint32");
 
 %% Кодирование фразы
 % Берем i от 1 до количество алфавита
-for i=1:length(uniq_symb)
+for i = 1:length(uniq_symb)
     % Ищем длину каждого уникального символа
     uniq_symb_len = length(findstr(text, uniq_symb(i)));
     % Частота
